@@ -3,12 +3,12 @@ package com.ubs.marsrover;
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode
-public class MartianCubit {
-    private final int i;
-    private final int i1;
+class MartianCubit {
+    private final int xAxis;
+    private final int yAxis;
 
-    public MartianCubit(int i, int i1) {
-        this.i = i;
-        this.i1 = i1;
+    MartianCubit(int xAxis, int yAxis) {
+        this.xAxis = xAxis;
+        this.yAxis = yAxis;
     }
 }
