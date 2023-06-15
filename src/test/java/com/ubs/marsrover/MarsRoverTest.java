@@ -19,13 +19,13 @@ public class MarsRoverTest {
         Assertions.assertThat(marsRover.position()).isEqualTo(new MartianCubit(0, 0));
     }
 
-//    @Test
-//    void shouldMoveForward() {
-//        MarsRover marsRover = new MarsRover();
-//        marsRover.land();
-//
-//        marsRover.move("F");
-//
-//        Assertions.assertThat(marsRover.position()).isEqualTo(new MartianCubit(1, 0));
-//    }
+    @Test
+    void shouldMoveForward() {
+        MarsRover marsRover = new MarsRover();
+        marsRover.land();
+
+        marsRover.move("F");
+
+        Assertions.assertThat(marsRover.position()).isEqualTo(new MartianCubit(1, 0));
+    }
 }

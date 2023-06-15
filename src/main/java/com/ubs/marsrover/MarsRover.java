@@ -8,4 +8,8 @@ class MarsRover {
     MartianCubit position() {
         return new MartianCubit(0, 0);
     }
+
+    void move(String f) {
+
+    }
 }
