@@ -4,7 +4,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class MarsRoverTest {
-    // only one move FRL
+    // only one move F R L
     // ignored characters
 
     @Test
@@ -13,9 +13,19 @@ public class MarsRoverTest {
         MarsRover marsRover = new MarsRover();
 
         // when
-        MartianCubit actual = marsRover.land();
+        marsRover.land();
 
         // then
-        Assertions.assertThat(actual).isEqualTo(new MartianCubit(0, 0));
+        Assertions.assertThat(marsRover.position()).isEqualTo(new MartianCubit(0, 0));
     }
+
+//    @Test
+//    void shouldMoveForward() {
+//        MarsRover marsRover = new MarsRover();
+//        marsRover.land();
+//
+//        marsRover.move("F");
+//
+//        Assertions.assertThat(marsRover.position()).isEqualTo(new MartianCubit(1, 0));
+//    }
 }
