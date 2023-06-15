@@ -1,7 +1,11 @@
 package com.ubs.marsrover;
 
 class MarsRover {
-    MartianCubit land() {
+    void land() {
+
+    }
+
+    MartianCubit position() {
         return new MartianCubit(0, 0);
     }
 }
